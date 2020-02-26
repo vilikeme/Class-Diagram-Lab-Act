@@ -1,6 +1,7 @@
 package com.classdiagram;
 
-abstract class sub1 {
+abstract class Properties {
+	//properties
 	private String name;
 	private int pqi;
 	private int resolutionWidth;
@@ -9,9 +10,10 @@ abstract class sub1 {
 	private String powerSupply;
 	private String pictureEngine;
 	private int hdmiPort;
-	private int usbPort;
+	private int usbPort;	
 
 	
+	//setters
 	public String setName(String name) {
 		return this.name = name;
 	}
@@ -47,7 +49,9 @@ abstract class sub1 {
 	public int setUsbPort(int usbPort) {
 		return this.usbPort = usbPort;
 	}
+
 	
+	//getters
 	public String getName(String name) {
 		return this.name;
 	}
@@ -82,8 +86,7 @@ abstract class sub1 {
 	
 	public int getUsbPort(int usbPort) {
 		return this.usbPort;
-	}
-	
+	}	
 	public void intro(int no) {
 		System.out.println(no +".)" + name + " Specifications: ");
 		System.out.println("PQI: "+pqi);
@@ -94,5 +97,7 @@ abstract class sub1 {
 		System.out.println("HDMI: "+ hdmiPort);
 		System.out.println("USB: "+ usbPort);
 	}
+	
+	
 
 }
