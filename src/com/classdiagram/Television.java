@@ -4,9 +4,9 @@ public class Television extends SecondProperties{
 	
 	public static void main(String[] args) {
 
-		SecondProperties[] tv = new SecondProperties[44];
+		Television[] tv = new Television[44];
 		for(int x = 0; x < tv.length; x++) {
-			tv[x] = new SecondProperties();
+			tv[x] = new Television();
 		}
 		tv[0].setName("QLED Q9F 4K Smart TV (2018)");
 		tv[0].setPqi(3700);
